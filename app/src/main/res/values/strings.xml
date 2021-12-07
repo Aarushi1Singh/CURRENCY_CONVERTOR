@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CURRENCY CONVERTOR</string>
+    <string name="japan_flag">japan flag</string>
+    <string name="germany_flag">germany flag</string>
+    <string name="brazil_flag">brazil flag</string>
+    <string name="china_flag">china flag</string>
+    <string name="finland_flag">finland flag</string>
+    <string name="india_flag">india flag</string>
+    <string name="canada_flag">canada flag</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="converted_amount">Converted Amount</string>
+    <string name="convert">CONVERT</string>
+</resources>

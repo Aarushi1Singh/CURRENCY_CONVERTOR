@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200">
+
+
+
+
+        <TextView
+            android:id="@+id/display_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/display_currency">
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/japan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/japan"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/japan_flag" />
+
+            <ImageButton
+                android:id="@+id/germany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/germany"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/germany_flag" />
+
+            <ImageButton
+                android:id="@+id/brazil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/brazil"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/brazil_flag" />
+
+            <ImageButton
+                android:id="@+id/china"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/china"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/china_flag" />
+
+            <ImageButton
+                android:id="@+id/finand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/finland"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/finland_flag" />
+
+            <ImageButton
+                android:id="@+id/india"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/india"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/india_flag" />
+
+            <ImageButton
+                android:id="@+id/canada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/canada"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/canada_flag" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/enterAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount"
+        app:layout_constraintTop_toBottomOf="@id/scrollView1"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/convertedAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/enterAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/converted_amount"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/convertedAmount">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/japan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/japan"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/japan_flag" />
+
+            <ImageButton
+                android:id="@+id/germany2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/germany"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/germany_flag" />
+
+            <ImageButton
+                android:id="@+id/brazil2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/brazil"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/brazil_flag" />
+
+            <ImageButton
+                android:id="@+id/china2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/china"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/china_flag" />
+
+            <ImageButton
+                android:id="@+id/finland2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/finland"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/finland_flag" />
+
+            <ImageButton
+                android:id="@+id/india2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/india"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/india_flag" />
+
+            <ImageButton
+                android:id="@+id/canada2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/canada"
+                android:background="@color/teal_200"
+                android:padding="4dp"
+                android:contentDescription="@string/canada_flag" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/display_currency2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="160dp"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginLeft="15dp" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/display_currency2"
+        android:layout_margin="20dp"
+        android:text="@string/convert"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
